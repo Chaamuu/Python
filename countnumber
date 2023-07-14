@@ -1,0 +1,9 @@
+count=0
+def find_length(num):
+    if num>0:
+        global count
+        count=count+count+1
+        find_length(num//10)
+        
+find_length(467)
+print(count)
