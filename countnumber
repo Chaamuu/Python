@@ -7,3 +7,10 @@ def find_length(num):
         
 find_length(467)
 print(count)
+##
+def print_num(num):
+    if num<10:
+        print_num(num+1)
+    print(num)
+    
+print_num(1)
