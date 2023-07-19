@@ -9,3 +9,38 @@ p2=Person()
 print(p1.name,p1.age)
 print(p2.name,p2.name)
 
+class Dog:
+    def sleep(self): # OLM/IM
+        print("Dog Sleep")
+    def eat(self): #OLM/IM
+        print("Dog Eat")
+        
+list1=list()
+list1.append(10)
+
+nepo=Dog()
+chow=Dog()
+nepo.sleep()
+nepo.eat()
+
+chow.sleep()
+nepo.eat()
+
+
+##
+class Car:
+    def create_properties(self):
+        self.color=None
+        self.price=None
+        self.model=None
+        
+        
+audi=Car()
+audi.create_properties()
+bmw=Car()
+bmw.create_properties()
+audi.color="red"
+audi.price=23000
+audi.model="aademo"
+print(audi.color,audi.price,audi.model)
+print(bmw.color,bmw.price,bmw.model)
