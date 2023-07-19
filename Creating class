@@ -14,3 +14,22 @@ nepo.eat()
 
 chow.sleep()
 nepo.eat()
+
+
+##
+class Car:
+    def create_properties(self):
+        self.color=None
+        self.price=None
+        self.model=None
+        
+        
+audi=Car()
+audi.create_properties()
+bmw=Car()
+bmw.create_properties()
+audi.color="red"
+audi.price=23000
+audi.model="aademo"
+print(audi.color,audi.price,audi.model)
+print(bmw.color,bmw.price,bmw.model)
