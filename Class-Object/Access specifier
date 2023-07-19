@@ -1,0 +1,19 @@
+class A:
+    def __m1(self):
+        print("private method")
+    def m2(self):
+        print("public method")
+obja=A()
+obja.m2() #public is accesable 
+obja.__m1()
+
+
+##
+class A:
+    def __init__(self):
+        self.__x=100 #private
+        self.y=200 #public
+        
+obja=A()
+print(obja.y)
+
