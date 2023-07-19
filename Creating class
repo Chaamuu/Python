@@ -1,0 +1,16 @@
+class Dog:
+    def sleep(self): # OLM/IM
+        print("Dog Sleep")
+    def eat(self): #OLM/IM
+        print("Dog Eat")
+        
+list1=list()
+list1.append(10)
+
+nepo=Dog()
+chow=Dog()
+nepo.sleep()
+nepo.eat()
+
+chow.sleep()
+nepo.eat()
