@@ -1,0 +1,29 @@
+##constructor with arguments
+class Person:
+    def __init__(self,n,a):
+        self.name=n
+        self.age=a
+        
+p1=Person("ninad",50)
+p2=Person("suresh",20)
+
+print(p1.name,p1.age)
+print(p2.name,p2.age)
+
+  #constructor with arguments
+class Student:
+    def __init__(self,r,n,c):
+        self.rollno=r
+        self.name=n
+        self.course=c
+    
+stud1=Student(101,"naresh","python")
+stud2=Student(102,"meena","java")
+stud3=Student(103,"karishma","cpp")
+
+
+print(stud1.rollno,stud1.name,stud1.course)
+print(stud2.rollno,stud2.name,stud2.course)
+print(stud3.rollno,stud3.name,stud3.course)
+
+  
