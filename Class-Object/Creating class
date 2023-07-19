@@ -1,0 +1,11 @@
+class Person:
+    def __init__(self):
+        print("Person  object is created")
+        self.name=None #IV/object level variable
+        self.age=None
+        
+p1=Person()
+p2=Person()
+print(p1.name,p1.age)
+print(p2.name,p2.name)
+
