@@ -1,0 +1,21 @@
+class Product:
+    __pcount=0
+    def __init__(self,n,p):
+        self.__name=n
+        self.__price=p
+        Product.__pcount+=1
+    def print_product(self):
+        print(f'{self.__name},{self.__price}')
+    
+    @classmethod
+    def get_product_count(cls):
+        return Product.__pcount
+        
+c=Product.get_product_count()
+print(f'Product Count {c}')
+p1=Product("keyborad",2000)
+p2=Product("mouse",300)
+p1.print_product()
+p2.print_product()
+c=Product.get_product_count()
+print(f'Product Count {c}')
