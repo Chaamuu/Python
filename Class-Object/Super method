@@ -1,0 +1,24 @@
+class A:
+    def m1(self):
+        print("m1 of A class")
+class B(A): # Dervied class/Sub class/child class
+    def m2(self):
+        print("m2 of B class")
+objb=B()
+objb.m1()
+objb.m2()
+
+
+##
+class A:
+    def __init__(self):
+        self.x=100
+        self.y=200
+class B(A):
+    def __init__(self):
+        super().__init__()
+        self.p=300
+        self.q=400
+objb=B()
+print(objb.x,objb.y)
+print(objb.p,objb.q)
