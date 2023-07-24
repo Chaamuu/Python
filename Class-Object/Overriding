@@ -1,23 +1,28 @@
-class Person:
-    def __init__(self):
-        self.__name=None
-    def read(self):
-        self.__name=input("enter Name")
-    def print_info(self):
-        print(f'Name {self.__name}')
+class A:
+    def m1(self):#overriden method
+        print("m1 of A")
         
-class Student(Person):
-    def __init__(self):
-        super().__init__()
-        self.course=None
-    def read(self):#overriding method
-        super().read()
-        self.__course=input("enter course")
-    def print_info(self):
-        super().print_info()
-        print(f'course {self.__course}')
+class B(A):
+    def m2(self):
+        print("m2 of B")
+    def m1(self):#overriding metod
+        print("overriding method")
+        
 def main():
-    stud1=Student()
-    stud1.read()
-    stud1.print_info()
+    objb=B()
+    objb.m1()
+    objb.m2()
 main()
+
+##
+class A:
+    def m1(self):
+        print("m1 of A")
+        
+class B(A):
+    def m2(self):
+        print("m2 of B")
+        
+objb=B()
+objb.m1()
+objb.m2()
