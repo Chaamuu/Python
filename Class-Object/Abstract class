@@ -1,0 +1,23 @@
+import abc
+class Sim(abc.ABC):
+    @abc.abstractmethod
+    def connect(self):
+        pass
+    
+class AirtelSim(Sim):
+    def connect(self):
+        print("connect to airtel network")
+        
+class JioSim(Sim):
+    def connect(self):
+        print("connect to jio network")
+        
+class Mobile:
+    def insert(self,s):
+        s.connect()
+        
+asim1=AirtelSim()
+jsim2=JioSim()
+iphone1=Mobile()
+iphone1.insert(asim1)
+iphone1.insert(jsim2)
