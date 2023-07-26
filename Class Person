@@ -1,0 +1,25 @@
+class Person:
+    class Address:
+        def __init__(self):
+            self.__street=None
+            self.__city=None
+        def read_address(self):
+            self.__street=input("enter Street")
+            self.__city=input("enter City")
+        def print_address(self):
+            print(f'{self.__street},{self.__city}')
+    def __init__(self):
+        self.__name=None
+        self.__add=Person.Address()
+    def read_person(self):
+        self.__name=input("Enter Name")
+        self.__add.read_address()
+    def print_person(self):
+        print(f'{self.__name}')
+        self.__add.print_address()
+        
+def main():
+    p1=Person()
+    p1.read_person()
+    p1.print_person()
+main()
