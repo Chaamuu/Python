@@ -2,7 +2,7 @@ num1=int(input("enter first number"))
 num2=int(input("enter the sencond number"))
 try:
     num3=num1/num2
-    print(f'{num1}/{num2}={num3})')
+    print(f'{num1}/{num2}={num3}')
 except ZeroDivisionError:
     print("cannot divide number with zero,try again")
 print("continue")
