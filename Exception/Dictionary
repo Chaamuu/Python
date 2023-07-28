@@ -1,0 +1,13 @@
+userDict={'nit':'nithis',
+          'mnm':'radhika',
+        'naresh':'123'}
+try:
+    user=input("username")
+    pwd=input("password")
+    p=userDict[user]
+    if p==pwd:
+        print(f'{user}Welcome')
+    else:
+        print("invalid username or password ")
+except KeyError:
+    print("invalid user name")
