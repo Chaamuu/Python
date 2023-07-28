@@ -1,0 +1,10 @@
+try:
+    print("inside try block")
+    n1=int(input("enter first number"))
+    n2=int(input("enter second number"))
+    n3=n1/n2
+except ValueError:
+    print("inside except block")
+finally:
+    print("inside finally block")
+print("continue.....")
