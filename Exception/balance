@@ -1,0 +1,29 @@
+class InsuffBalanceError(Exception):
+    def __init__(self):
+        super().__init__()
+class Account:
+    def __init__(self,a,cn,b):
+        self.__accno=a
+        self.__cname=cn
+        self.__balance=b
+    def deposit(self,t):
+        self.__balance=self.__balance+t
+    def withdraw(self,t):
+        if self.__balance<t:
+            raise InsuffBalanceError()
+        else:
+            self.__balance=self.__balance-t
+def __str__(self):
+    return f'{self.__accno},{self.__cname},{self.__balance}' 
+def main():
+    acc1=Account(101,"naresh",5000.0)
+    print(acc1)
+    acc1.deposit(1000)
+    print(acc1)
+    try:
+        acc1.withdraw(2000)
+        print(acc1)
+        acc1.withdraw(7000)
+    except InsuffBalanceError:
+        print("Insuff Balance")
+main()
