@@ -1,0 +1,17 @@
+
+
+def main():
+    f=open("f:\\marks.txt","w")
+    while True:
+        rno=int(input("rollno:"))
+        name=input("name of the student")
+        sub1=int(input("subject1"))
+        sub2=int(input("subject2"))
+        print(rno,name,sub1,sub2,file=f)
+        ans=input("Add another student?")
+        if ans=="no":
+            f.close()
+            break
+main()
+
+-> output will be stored in the file 
