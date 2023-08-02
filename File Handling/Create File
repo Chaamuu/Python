@@ -1,0 +1,21 @@
+how to pickle custom object?
+
+#create one module with one datatype
+#emp.py
+import emp
+import pickle
+
+def main():
+    f=open("empfile.ser","wb") //binary
+    
+    
+    emp1=emp.Employee()
+    emp2=emp.Employee()
+    emp1.set_employee(101,"naresh",40000.0)
+    emp2.set_employee(102,"nagesh",5000.0)
+    
+    pickle.dump(emp1,f)
+    pickle.dump(emp2,f)
+    
+    f.close()
+main()
