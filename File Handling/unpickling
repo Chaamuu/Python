@@ -1,0 +1,14 @@
+import pickle 
+
+def main():
+    f=open("f:\\file.ser","rb") //read in binary 
+    a=pickle.load(f)
+    b=pickle.load(f)
+    c=pickle.load(f)
+    d=pickle.load(f)
+    e=pickle.load(f)
+    print(a,b,c,d,e)
+    
+    f.close()
+    
+main()
