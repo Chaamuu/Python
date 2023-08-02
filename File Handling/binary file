@@ -1,0 +1,21 @@
+import pickle
+
+def main():
+    f=open("f:\\file1.ser","wb") //b=binary file
+    a=65
+    b=1.5
+    c=1+2j
+    d=True
+    pickle.dump(a,f)
+    pickle.dump(b,f)
+    pickle.dump(c,f)
+    pickle.dump(d,f)
+    
+    
+    
+    f.close()
+    
+main()
+
+o/p:
+data is saved inside file
