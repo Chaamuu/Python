@@ -1,0 +1,9 @@
+#program to create copy of image
+
+def main():
+    f1=open("django.png","rb")
+    f2.open("djangocopy.png","wb")
+    b=f1.read()
+    print(type(b))
+    
+main()    
