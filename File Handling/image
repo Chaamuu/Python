@@ -7,3 +7,13 @@ def main():
     print(type(b))
     
 main()    
+
+##
+def main():
+    f1=open("django.png","rb") //take the image path
+    f2=open("django.png","wb")
+    b=f1.read()
+    f2.write(b)
+    f1.close()
+    f2.close()
+main()
