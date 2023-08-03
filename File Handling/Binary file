@@ -1,0 +1,29 @@
+#program to write employee object inside binary file
+
+#test.py
+import emp
+import pickle
+def main():
+  f=open(&quot;f:\\empfile.ser&quot;,&quot;wb&quot;)
+
+  emp1=emp.Employee()
+  emp2=emp.Employee()
+  emp1.set_employee(101,&quot;naresh&quot;,5000.0)
+  emp2.set_employee(102,&quot;suresh&quot;,4000.0)
+  pickle.dump(emp1,f)
+  pickle.dump(emp2,f)
+  f.close()
+main()
+
+#Reading objects from binary
+#test2.py
+import emp
+import pickle
+
+def main():
+  f=open(&quot;f:\\empfile.ser&quot;,&quot;rb&quot;)
+  emp1=pickle.load(f)
+  emp2=pickle.load(f)
+  emp1.print_employee()
+  emp2.print_employee()
+  main()
