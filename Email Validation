@@ -1,0 +1,12 @@
+# email validation
+# name@domain.type
+import re
+def main():
+    email=input("Enter Email Id")
+    m=re.fullmatch(r'[a-z0-9]+@[a-z]+\.[a-z]{2,3}',email)
+    if m!=None:
+        print(f'{email} is valid')
+    else:
+        print(f'{email} is invalid')
+
+main()
