@@ -1,0 +1,11 @@
+# name validation
+import re
+def main():
+    name=input("Enter Name")
+    m=re.fullmatch(r'[A-Z]{5,}',name)
+    if m!=None:
+        print(f'{name} is valid')
+    else:
+        print("name must be in block letters")
+
+main()
