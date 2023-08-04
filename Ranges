@@ -1,0 +1,22 @@
+import re 
+namesList=['naresh','suresh','ramesh','kishore','rajesh']
+
+for name in namesList:
+    m=re.search(r'^[r]',name)
+    if m!=None:
+        print(name)
+print("------------")
+for name in namesList:
+    m=re.search(r'^[rk]',name)
+    if m!=None:
+        print(name)
+print("-----------")
+for name in namesList:
+    m=re.search(r'[h]$',name)
+    if m!=None:
+        print(name)
+print("-----------")
+for name in namesList:
+    m=re.search(r'^[kr].*[h]$',name)
+    if m!=None:
+        print(name)
