@@ -1,0 +1,14 @@
+#Extracting date from string
+import re
+def main():
+    str1="Date of Joining 12/02/2023"
+    m=re.search(r'([0-9]{2})/([0-9]{2})/([0-9]{4})',str1)
+    if m!=None:
+        print(m)
+        print(m.group(0))
+        print(m.group(1))
+        print(m.group(2))
+        print(m.group(3))
+    else:
+        print("pattern not found")
+main()        
