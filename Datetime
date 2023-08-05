@@ -1,0 +1,4 @@
+import datetime
+d1=datetime.date(2023,6,10)
+print('Date is {d1}')
+print(f'Day {d1.day} Month {d1.month} Year {d1.year}')
