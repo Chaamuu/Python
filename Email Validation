@@ -10,3 +10,12 @@ def main():
         print(f'{email} is invalid')
 
 main()
+
+##
+import re
+def main():
+
+    str1="python 3.12"
+    l=re.findall(r'\D',str1)
+    print(l)
+main()
