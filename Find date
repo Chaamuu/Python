@@ -1,0 +1,11 @@
+# write a program to find todays date, y&#39;date and t&#39;date
+
+import datetime
+
+d=datetime.date.today()
+print(f'Today date {d}')
+td1=datetime.timedelta(days=1)
+td=d+td1
+print(f"T'Date {td}")
+yd=d-td1
+print(f"Y'Date {yd}")
