@@ -1,0 +1,14 @@
+import re
+def main():
+    str1="ab abb abbb abbbb"
+    a=re.finditer(r'ab{1,4}',str1)
+    
+    print(next(a))
+    print(next(a))
+    print(next(a))
+    print(next(a))
+    
+    b=re.finditer(r'ab{1,4}',str1)
+    for m in b:
+        print(m.group(0))
+main()
