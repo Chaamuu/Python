@@ -1,0 +1,10 @@
+import re
+def main():
+    user=input("user name")
+    m=re.fullmatch(r'\wt',user)
+    if m!=None:
+        print(f'{user} is valid')
+    else:
+        print(f'{user} is invalid')
+        
+main()
