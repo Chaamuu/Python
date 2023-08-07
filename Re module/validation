@@ -9,3 +9,11 @@ def main():
         print("name must be in block letters")
 
 main()
+
+##
+import re
+def main():
+    str1="python 3.12"
+    l=re.findall(r'\w',str1)
+    print(l)
+main()
