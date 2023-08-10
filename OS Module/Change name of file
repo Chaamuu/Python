@@ -1,0 +1,15 @@
+import os
+import os.path
+def main():
+    src=input("Enter Source File Name")
+    if os.path.exists(src):
+        dst=input("Enter New File Name")
+        if os.path.exists(dst):
+            print("New filename exist")
+        else:
+            os.rename(src,dst)
+            print("File is Renamed..")
+    else:
+        print("File Not Found")
+
+main()
