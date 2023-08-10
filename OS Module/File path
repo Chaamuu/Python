@@ -1,0 +1,13 @@
+import os
+import os.path
+def main():
+    fname=input("Enter FileName")
+    if os.path.exists(fname):
+        if os.path.isfile(fname):
+            os.remove(fname)
+            print("File Deleted...")
+        else:
+            print("It is Folder")
+    else:
+        print("File Not Found")
+main()
