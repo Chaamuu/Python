@@ -1,0 +1,21 @@
+import threading
+class EvenThread(threading.Thread):
+    def __init__(self):
+        super().__init__()
+    def run(self):
+        for num in range(1,21):
+            if num%2==0:
+                print(f'{num} Even')
+
+class OddThread(threading.Thread):
+    def __init__(self):
+        super().__init__()
+    def run(self):
+        for num in range(1,21):
+            if num%2!=0:
+                print(f'{num} Odd')
+
+t1=EvenThread()
+t2=OddThread()
+t1.start()
+t2.start()
