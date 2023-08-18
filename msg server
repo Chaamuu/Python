@@ -1,0 +1,16 @@
+# Message Server
+import socket
+  def main():
+  s=socket.socket()
+  s.bind(("localhos",50))
+  s.listen(10)
+  print("Message Server is Running")
+  t=s.accept()
+  cs=t[0] # reading connection of client/socket
+  b=cs.recv(1024) # receive data in bytes
+  msg=b.decode() # converting bytes to string
+  print(msg)
+  msg="Hello Client"
+  b=msg.encode()
+  cs.send(b)
+main()
