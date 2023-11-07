@@ -1,0 +1,14 @@
+def compute_value(a, b):
+    # update your code below this line
+    compute_result=A**2 + 2*A*B + B**2
+    add=A+B
+    print(compute_result,add)
+    
+    
+    
+    
+
+t = 3
+for i in range(t):
+    A, B = map(int, input().split())
+    compute_value(A, B)
